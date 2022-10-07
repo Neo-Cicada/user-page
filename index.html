@@ -26,34 +26,42 @@
     </div>
 
   
-    <form id="contactForm" class="width-10%">
+    <form id="contactForm" class="was-validated">
         <!-- Name input-->
         <div class="form-floating mb-3 form-floating-lg ">
-            <input class="form-control" id="name" type="text" placeholder="Enter your name...">
+            <input class="form-control" id="name" type="text" placeholder="Enter your name..." required>
             <label for="name">Fullname</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <!-- Email address input-->
         <div class="form-floating mb-3">
-            <input class="form-control" id="email" type="email" placeholder="name@example.com"/>
+            <input class="form-control" id="email" type="email" placeholder="name@example.com" required/>
             <label for="email">Email address</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <!-- Id number input-->
         <div class="form-floating mb-3">
-            <input class="form-control" id="name" type="text" placeholder="01 2122 01234"/>
+            <input class="form-control" id="name" type="text" placeholder="01 2122 01234" required/>
             <label for="name">ID Number</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
             
         </div>
         <!-- Phone number input-->
         <div class="form-floating mb-3">
-            <input class="form-control" id="phone" type="tel" placeholder="+63"/>
+            <input class="form-control" id="phone" type="tel" placeholder="+63" required/>
             <label for="phone">Phone number</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
             
         </div>
         <!-- Room input-->
         <div class="form-group mb-3">
             <label for="rooms">Classrooms</label>
-            <select name="rooms" id="rooms" class="selectpicker" multiple>
-                <option value="Room 201">Room 201</option>
+            <select name="rooms" id="rooms" class="selectpicker" multiple required>
+                <option value="None">None</option>
                 <option value="Room 202">Room 202</option>
                 <option value="Room 203">Room 203</option>
                 <option value="Room 204">Room 204</option>
@@ -74,7 +82,8 @@
                 <option value="Room 504">Room 504</option>
                 <option value="Room 505">Room 505</option>
             </select>
-
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
 
         </div>
 
@@ -82,44 +91,47 @@
         <!-- Equipment input-->
         <div class="form-group mb-3">
             <label for="equipments">Equipments</label>
-            <select name="equipments" id="equipments" class="selectpicker" multiple>
-                <option value="Speaker">Speaker</option>
+            <select name="equipments" id="equipments" class="selectpicker" multiple required>
+                <option value="None">None</option>
                 <option value="Extension">Extension</option>
                 <option value="Ballpen">Ballpen</option>
                 <option value="Eraser">Eraser</option>
                 <option value="Mouse">Mouse</option>
             </select>
-
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
 
         </div>
 
         <!-- Callendar input -->
         <div class="form-floating mb-3">
 
-            <input class="form-control" type="datetime-local" id="calendar" name="daytime">
+            <input class="form-control" type="datetime-local" id="calendar" name="daytime" required>
             <label for="calendar">Starting Time and Date</label>
-
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
            
 
         </div>
         <div class="form-floating mb-3">
 
-            <input class="form-control" type="datetime-local" id="calendar2" name="daytime2">
+            <input class="form-control" type="datetime-local" id="calendar2" name="daytime2" required>
             <label for="calendar">End Time and Date</label>
-
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
             
 
         </div>
         <!-- Message input-->
         <div class="form-floating mb-3">
-            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." required
                 style="height: 10rem"></textarea>
             <label for="message">Message</label>
-            
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
         </div>
        
-        <!-- Submit Button-->
-        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+        <input class="btn btn-primary" type="submit" value="Submit">
     </form>
 
     <!-- JavaScript -->
