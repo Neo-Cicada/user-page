@@ -1,7 +1,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css');
-html,
-body {
-    
-  margin: 0 auto;
-  display: auto;
+.jumbotrn{
+    background: #E8B88C;   
+}
+.container{
+    background: #E8B88C;
+    margin-top: 0;
+   
+}
+h1,p{
+    text-align: center;
 }
