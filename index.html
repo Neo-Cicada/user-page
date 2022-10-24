@@ -68,8 +68,8 @@
                     <option value="Room 202">Room 202</option>
                     <option value="Room 203">Room 203</option>
                     <option value="Room 204">Room 204</option>
-                   
-                    
+
+
                 </optgroup>
                 <optgroup label="Equipments">
                     <option>cable</option>
@@ -89,14 +89,32 @@
         <!-- Callendar input -->
         <div class="form-floating mb-3">
 
-            <input class="form-control" type="datetime-local" id="calendar" name="daytime" required>
-            <label for="calendar">Date and Time</label>
+            <input class="form-control" type="date" id="date" name="date" required>
+            <label for="date">Date</label>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Please fill out this field.</div>
 
 
         </div>
-       
+        <div class="form-floating mb-3">
+
+            <input class="form-control" type="time" id="start" name="start-time" required>
+            <label for="start">Start Time</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+        </div>
+        <div class="form-floating mb-3">
+
+            <input class="form-control" type="time" id="end" name="end-time" required>
+            <label for="end">End Time</label>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+        </div>
+
         <!-- Message input-->
         <div class="form-floating mb-3">
             <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." required
